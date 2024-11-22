@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Senegal</title>
+  <link rel="stylesheet" href="/Atividade-Países/assets/css/style.css">
+  
+</head>
+<body>
+  <header>
+    <div class="menu">
+      <div class="menu-logo">
+        <a>Senegal e suas belezas</a>
+      </div>
+      <nav class="menu-nav">
+        <ul>
+          <li><a href="/Atividade-Países/pages/belezas.html" class="menu-item">Belezas</a></li>
+          <li><a href="/Atividade-Países/pages/dicas.html" class="menu-item">Dicas</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <div class="foto1">
+    <img src="/Atividade-Países/assets/images/1.jpg" height="749px" alt="">
+  </div>
+
+  <h1 class="introducaoH1">
+    Senegal está localizado no litoral atlântico da África Ocidental. O país é conhecido pelo importante papel diplomático regional nos âmbitos político e econômico.
+  </h1>
+
+  <hr class="hr-1">
+
+  <h2 class="sobre-h2">Sobre</h2>
+  <p class="sobre-p">O Senegal é um país da costa ocidental da África com uma rica herança colonial francesa e muitas atrações naturais. Dacar, a capital, abriga a antiga área da Medina e o estimado Musée Théodore-Monod, que expõe arte africana. Dacar também é conhecida pela vida noturna, que gira em torno da música mbalax nativa. Saint-Louis, antiga capital da África Ocidental Francesa, tem uma cidade antiga com arquitetura colonial.</p>
+
+  <h2 class="article-title">Museu Théodore Monod</h2>
+
+    <div >
+      <div class="img-museu"><img src="/Atividade-Países/assets/images/Museu.jpg" width="800px" alt="Museu Théodore Monod" class="gallery-img"></div>
+      
+      <button class="info-toggle" onclick="toggleInfo(0)">Saiba Mais</button>
+      <div class="info-text">
+          <p class="meup">
+          O Museu Théodore Monod de Arte Africana em Dakar, Senegal é um dos museus de arte mais antigos da África Ocidental. Foi promovido por Léopold Senghor, o primeiro presidente do país.
+          </p>
+      </div>
+    </div>
+
+    <hr class="hr-1">
+
+
+
+    <!-- Modal de visualização de imagem -->
+    <div id="imageModal" class="modal">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <img class="modal-content" id="modalImage">
+      <div id="modalCaption" class="caption"></div>
+    </div>
+  
+  <div class="container">
+    <h1>Formulário de Feedback</h1>
+    <form id="feedbackForm" action="#" method="POST" onsubmit="return validateForm()">
+        <div>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name">
+            <div id="nameError" class="error"></div>
+        </div>
+
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+            <div id="emailError" class="error"></div>
+        </div>
+
+        <div>
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+            <div id="messageError" class="error"></div>
+        </div>
+
+        <div>
+            <input type="submit" value="Enviar Feedback">
+        </div>
+    </form>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; Site licenciado</p>
+  </footer>
+
+  <script src="/Atividade-Países/assets/js/script.js"></script>
+</body>
+</html>
